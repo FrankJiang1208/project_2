@@ -9,6 +9,6 @@ From the data provided, we can discern that...
 
 Running the program:
 
-1. Open the password.py file and add in your postgres password in password="<YOUR PASSWORD>"
+1. Open the password.py file and add in postgres password in password="<YOUR PASSWORD>"
 2. Create a Database called musician_db in PGAdmin
 3. Open ETL.ipynb file and run it (If want to run full billboardHot100_1999-2019.csv file, open the zip and change the Billboard_File_Path in ETL.ipynb File)
