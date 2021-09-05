@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignored files
+.DS_Store
+*.csv
+
 # C extensions
 *.so
 
