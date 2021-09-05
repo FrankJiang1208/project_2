@@ -12,8 +12,8 @@ CREATE TABLE billboard (
 id INT PRIMARY KEY,
 Artist Varchar(30) Not null,
 Name Varchar(50) Not null,
-Weekly.rank Int,
-Peak.position Int,
+Weekly_rank Int,
+Peak_position Int,
 NumAlbums Int,
 Date date,
 Genres TEXT
