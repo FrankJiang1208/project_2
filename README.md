@@ -1,6 +1,6 @@
 # Project_2: Billboard, Grammy, Artists
 
-We have looked at data pertaining to Billboard Songs, Grammy-Awarded Songs, their respective artists, and their relationship with one another. These datasets are limited to the years 1999-2019. These datasets were found on https://www.kaggle.com/danield2255/data-on-songs-from-billboard-19992019/version/1 conducted by Daniel DeFoe.
+We have looked at data pertaining to Billboard Songs, Grammy-Awarded Songs, their respective artists, and their relationship with one another. These datasets are limited to the years 1999-2019 and were found on https://www.kaggle.com/danield2255/data-on-songs-from-billboard-19992019/version/1 conducted by Daniel DeFoe.
 
 We used pgAdmin to upload our data into a SQL Database (relational). 
 
