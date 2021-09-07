@@ -6,6 +6,7 @@ __pycache__/
 # Ignored files
 .DS_Store
 *.csv
+config.py
 
 # C extensions
 *.so
