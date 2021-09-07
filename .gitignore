@@ -3,11 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+<<<<<<< HEAD
 # Ignored files
 .DS_Store
 *.csv
 config.py
 
+=======
+>>>>>>> 9e04d79f76c55104a8cfa2cf627f7e3b617025ac
 # C extensions
 *.so
 

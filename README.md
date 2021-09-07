@@ -1,14 +1,16 @@
-# Project_2: Music and Artists
+# Project_2: Billboard, Grammy, Artists
 
-We have looked at data pertaining to ______ and their relationship with data on their respective music artists. This data was found on https://www.kaggle.com/danield2255/data-on-songs-from-billboard-19992019/version/1 conducted by Daniel DeFoe.
+## Proposal
+We have looked at data pertaining to Billboard Songs, Grammy-Awarded Songs, their respective artists, and their relationship with one another. These datasets are limited to the years 1999-2019 and were found on https://www.kaggle.com/danield2255/data-on-songs-from-billboard-19992019/version/1 conducted by Daniel DeFoe.
 
-We used pgAdmin to upload our data into a SQL Database (relational). 
+We used pgAdmin to upload our data into a SQL Database (relational) and to query the datasets as instructed.
 
-From the data provided, we can discern that...
+After querying the provided data, we can observe that the Country music genre has the most entries in the Billboard dataset while the Rock music genre has the most entries in the Grammy dataset. We can also discern that Drake, the music artist, had the most entires in the Billboard dataset while Adele had the most entries in the Grammy dataset. 
 
+![Sample Pic](Resources/sample.png)
 
+### Instructions
 Running the program:
 
-1. Open the password.py file and add in postgres password in password="<YOUR PASSWORD>"
-2. Create a Database called musician_db in PGAdmin
-3. Open ETL.ipynb file and run it (If want to run full billboardHot100_1999-2019.csv file, open the zip and change the Billboard_File_Path in ETL.ipynb File)
+1. Open ETL.ipynb
+2. run everything and when prompted, enter pgadmin password
