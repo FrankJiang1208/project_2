@@ -38,9 +38,9 @@ inner join public."Artists" a
 on  a."Artist" = t."Artists"
 left join public."Grammy" g
 on t."Name" = g."Name"
-
+order by g."GrammyYear" asc
 --join showing which grammy songs have billboard ranks
 select g."Name", g."Artist", g."GrammyAward", g."GrammyYear", t."Peak_position"
-from public."Grammy" g
+from public."Grammy" g	
 left join test t
 on g."Name" = t."Name"
