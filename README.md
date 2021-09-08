@@ -11,7 +11,7 @@ The data in the three files included the following information:
 * BillboardHot100 songs from the year 1999 to 2019.
 * Grammy songs from 1999 to 2019.
 
-## Transformation of data:
+## Transform:
 
 
 [Jupyter Notebook - which we worked on to clean up our data] https://github.com/FrankJiang1208/project_2/blob/main/ETL.ipynb
