@@ -1,46 +1,46 @@
-select * from public."Artists";
-select * from public."Billboard";
-select * from public."Grammy";
+select * from artists;
+select * from billboard;
+select * from grammy_songs;
 
 --rank by genre, number of times it appears in data
-select b."Genre", count(b."Genre") from public."Billboard" b group by b."Genre" order by count(b."Genre") DESC
-select g."Genre", count(g."Genre") from public."Grammy" g group by g."Genre" order by count(g."Genre") DESC
+select b.genre, count(b.genre) from billboard b group by b.genre order by count(b.genre) DESC
+select g.genre, count(g.genre) from grammy_songs g group by g.genre order by count(g.genre) DESC
 
 --rank by artist name, number of times they appear in data
-select b."Artists", count(b."Artists") from public."Billboard" b group by b."Artists" order by count(b."Artists") DESC
-select g."Artist", count(g."Artist") from public."Grammy" g group by g."Artist" order by count(g."Artist") DESC
+select b.artist, count(b.artist) from billboard b group by b.artist order by count(b.artist) DESC
+select g.artist, count(g.artist) from grammy_songs g group by g.artist order by count(g.artist) DESC
 
 
 ----------------------------------------------------------------------------------------------------
 --join Artists and Billboard data
-select b."Name", a."Artist", b."Date", b."Weekly_rank",   a."Genres", a."NumAlbums"
-from public."Billboard" b
-inner join public."Artists" a
-on  a."Artist" = b."Artists"
+select b.artist, b.year , b.weeks_on_chart,   a.peak_position, a.num_albums
+from billboard b
+inner join artists a
+on  a.artist = b.artist
 
 --all join (raw)
-select b."Name", a."Artist", b."Date", b."Weekly_rank",   a."Genres", a."NumAlbums", g."GrammyAward", g."GrammyYear"
-from public."Billboard" b
-inner join public."Artists" a
-on  a."Artist" = b."Artists"
-left join public."Grammy" g
-on b."Name" = g."Name"
+select b.artist, b.week, b.weeks_on_chart,   a.genres, a.num_albums, g.grammy_award, g.grammy_year
+from billboard b
+inner join artists a
+on  a.artist = b.artist
+left join grammy_songs g
+on b.artist = g.artist
 
 
 --deleting duplicate rows due to weekly_rank and making an edited table (test)
-select * into test from public."Billboard" 
-delete from test a using (select min(ctid) as ctid, "Name" from test group by "Name" having count(*)>1) b where a."Name" = b."Name" and a.ctid <> b.ctid
+select * into test from billboard 
+delete from test a using (select min(ctid) as ctid, artist from test group by artist having count(*)>1) b where a.artist = b.artist and a.ctid <> b.ctid
 select * from test
 --all join (shows which billboard songs have grammy awards)
-select t."Name", a."Artist", t."Date", t."Weekly_rank",   a."Genres", a."NumAlbums", g."GrammyAward", g."GrammyYear"
+select a.artist, t.week, t.weeks_on_chart,   a.genres, a.num_albums, g.grammy_award, g.grammy_year
 from test t
-inner join public."Artists" a
-on  a."Artist" = t."Artists"
-left join public."Grammy" g
-on t."Name" = g."Name"
-order by g."GrammyYear" asc
+inner join artists a
+on  a.artist = t.artists
+left join grammy_songs g
+on t.artist = g.artist
+order by g.grammy_year asc
 --join showing which grammy songs have billboard ranks
-select g."Name", g."Artist", g."GrammyAward", g."GrammyYear", t."Peak_position"
-from public."Grammy" g	
+select g.artist, g.artist, g.grammy_award, g.grammy_year, t.peak_position
+from grammy_songs g	
 left join test t
-on g."Name" = t."Name"
+on g.artist = t.artist
