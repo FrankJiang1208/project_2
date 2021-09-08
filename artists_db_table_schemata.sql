@@ -2,13 +2,13 @@
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
-CREATE TABLE "artist" (
+CREATE TABLE "artists" (
     "artist" varchar(255)   NOT NULL,
     "genre" varchar(255)   NOT NULL,
     "num_albums" varchar(255)   NOT NULL,
     "gender" varchar(255)   NOT NULL,
     "group_solo" varchar(255)   NOT NULL,
-    CONSTRAINT "pk_artist" PRIMARY KEY (
+    CONSTRAINT "pk_artists" PRIMARY KEY (
         "artist"
      )
 );
@@ -22,7 +22,7 @@ CREATE TABLE "billboard" (
     "genre" varchar(255)   NOT NULL
 );
 
-CREATE TABLE "grammy_song" (
+CREATE TABLE "grammy_songs" (
     "artist" varchar(255)   NOT NULL,
     "grammy_award" varchar(255)   NOT NULL,
     "grammy_year" int   NOT NULL,
@@ -31,8 +31,7 @@ CREATE TABLE "grammy_song" (
 );
 
 ALTER TABLE "billboard" ADD CONSTRAINT "fk_billboard_artist" FOREIGN KEY("artist")
-REFERENCES "artist" ("artist");
+REFERENCES "artists" ("artist");
 
-ALTER TABLE "grammy_song" ADD CONSTRAINT "fk_grammy_song_artist" FOREIGN KEY("artist")
-REFERENCES "artist" ("artist");
-
+ALTER TABLE "grammy_songs" ADD CONSTRAINT "fk_grammy_songs_artist" FOREIGN KEY("artist")
+REFERENCES "artists" ("artist");
