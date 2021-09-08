@@ -12,8 +12,9 @@ The datasets used for this project provided information on:
 
 ### Transform:
 
-
-[Jupyter Notebook](https://github.com/FrankJiang1208/project_2/blob/main/ETL.ipynb)
+* [Jupyter Notebook](https://github.com/FrankJiang1208/project_2/blob/main/ETL.ipynb)
+* [Entity Relationship Diagram (ERD)](https://github.com/FrankJiang1208/project_2/blob/main/ERDiagram.PNG)
+* [Join Query](https://github.com/FrankJiang1208/project_2/blob/main/joinqueries.sql)
 
 In order to transform the public data and use it in our study we performed the following:
 * Used Pandas functions in Jupyter Notebook to load all three CSV files.
@@ -24,14 +25,10 @@ In order to transform the public data and use it in our study we performed the f
 
 ### Load:
 
-
-[Entity Relationship Diagram (ERD)](https://github.com/FrankJiang1208/project_2/blob/main/ERDiagram.PNG)
-
-[Table Schemata](https://github.com/FrankJiang1208/project_2/blob/main/artists_db_table_schemata.sql)
-
-* We used pgAdmin to upload our data into a SQL Database (relational) to link the data by our common identifier and to query the datasets as instructed.
+* We used pgAdmin to upload our data into a SQL Database (relational) and to query the datasets as instructed. The database created was named artist_db.
 
 ### Documentation:
+
 [Documentation Containing Business Rules](https://github.com/FrankJiang1208/project_2/blob/main/Documentation.xlsx)
 
 ### Instructions:
@@ -40,10 +37,7 @@ Running the program:
 1. Open ETL.ipynb
 2. run everything and when prompted, enter pgadmin password
 
-
 ### Findings: 
-
-[Join Query](https://github.com/FrankJiang1208/project_2/blob/main/joinqueries.sql)
 
 After querying the provided data, we can observe that:
 * Drake, the music artist, had the most entires in the Billboard dataset while U2 had the most entries in the Grammy dataset.
