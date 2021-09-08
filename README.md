@@ -27,6 +27,7 @@ In order to transform the public data and use it in our study we performed the f
 
 
 [ERD Diagram] https://github.com/FrankJiang1208/project_2/blob/main/ERDiagram.PNG
+
 [Shemata.sql file] https://github.com/FrankJiang1208/project_2/blob/main/artists_db_table_schemata.sql
 
 * We used pgAdmin to upload our data into a SQL Database (relational) to link the data by our common identifier, Artists and to query the datasets as instructed.
