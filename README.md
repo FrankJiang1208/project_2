@@ -7,9 +7,9 @@ We used 3 different datasets from the public platform Kaggle website. These data
 [Data can be found here] https://github.com/FrankJiang1208/project_2/tree/main/Resources 
 
 The data in the three files included the following information:
-    * Artists
-    * BillboardHot100 songs from the year 1999 to 2019.
-    * Grammy songs from 1999 to 2019.
+* Artists
+* BillboardHot100 songs from the year 1999 to 2019.
+* Grammy songs from 1999 to 2019.
 
 ## Transformation of data:
 
@@ -17,11 +17,11 @@ The data in the three files included the following information:
 [Jupyter Notebook - which we worked on to clean up our data] https://github.com/FrankJiang1208/project_2/blob/main/ETL.ipynb
 
 In order to transform the public data and use it in our study we performed the following:
-    * Used Pandas functions in Jupyter Notebook to load all three CSV files.
-    * Retained only few columns from the original csv files and dropped all the columns not relevant to the focus of this study.
-    * In the Billboard file, multiple artists were listed for the same song, we tried to clean up and stack each artist in a new row. 
-    * In the Grammy file, there were many irrelavent infomations of songwriters, soloist  etc attached to the artist name. We tried our best to cleanup and keep only the artist who is asscociated with each song. In this file also, we did stack each artist in a new row.
-    * Reviewed the files and transformed into data frames
+* Used Pandas functions in Jupyter Notebook to load all three CSV files.
+* Retained only few columns from the original csv files and dropped all the columns not relevant to the focus of this study.
+* In the Billboard file, multiple artists were listed for the same song, we tried to clean up and stack each artist in a new row. 
+* In the Grammy file, there were many irrelavent infomations of songwriters, soloist  etc attached to the artist name. We tried our best to cleanup and keep only the artist who is asscociated with each song. In this file also, we did stack each artist in a new row.
+* Reviewed the files and transformed into data frames
 
 ## Load:
 
