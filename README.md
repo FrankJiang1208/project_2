@@ -1,4 +1,4 @@
-# Project_2: ETL-project proposal
+# Project 2: ETL
 
 ## Billboard, Grammy, Artists
 ### Extract: 
@@ -45,8 +45,9 @@ Running the program:
 
 [Join Query](https://github.com/FrankJiang1208/project_2/blob/main/joinqueries.sql)
 
-* After querying the provided data, we can observe that the Country music genre has the most entries in the Billboard dataset while the Rock music genre has the most entries in the Grammy dataset. We can also discern that Drake, the music artist, had the most entires in the Billboard dataset while Adele had the most entries in the Grammy dataset.
-
+After querying the provided data, we can observe that:
+* Drake, the music artist, had the most entires in the Billboard dataset while U2 had the most entries in the Grammy dataset.
+* There are 61 song entries that are present in both the Billboard Dataset and the Grammy dataset.
 
 
 
