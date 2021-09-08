@@ -1,5 +1,4 @@
 # Project_2: ETL-project proposal
-____________________________________________________________________________________________________________________
 
 ## Billboard, Grammy, Artists
 ## Extract: 
@@ -13,7 +12,7 @@ The data in the three files included the following information:
     * Grammy songs from 1999 to 2019.
 
 ## Transformation of data:
-__________________________________________________________________________________________________________________________
+
 
 [Jupyter Notebook - which we worked on to clean up our data] https://github.com/FrankJiang1208/project_2/blob/main/ETL.ipynb
 
@@ -25,7 +24,7 @@ In order to transform the public data and use it in our study we performed the f
     * Reviewed the files and transformed into data frames
 
 ## Load:
-_____________________________________________________________________________________________________________________________
+
 
 [ERD Diagram] https://github.com/FrankJiang1208/project_2/blob/main/ERDiagram.PNG
 [Shemata.sql file] https://github.com/FrankJiang1208/project_2/blob/main/artists_db_table_schemata.sql
@@ -33,14 +32,14 @@ ________________________________________________________________________________
     * We used pgAdmin to upload our data into a SQL Database (relational) to link the data by our common identifier, Artists and to query the datasets as instructed.
 
 ## Documentation:
-_________________________________________________________________________________________________________________________________
+[Documentaion] https://github.com/FrankJiang1208/project_2/blob/main/Documentation.xlsx
 
 ## Instructions
 Running the program:
 
 1. Open ETL.ipynb
 2. run everything and when prompted, enter pgadmin password
-[Documentaion] https://github.com/FrankJiang1208/project_2/blob/main/Documentation.xlsx
+
 
 ## Query: 
 ________________________________________________________________________________________________________________________________________
