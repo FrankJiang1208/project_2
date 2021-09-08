@@ -1,7 +1,7 @@
 # Project_2: ETL-project proposal
 
 ## Billboard, Grammy, Artists
-## Extract: 
+### Extract: 
 
 We used 3 different datasets limited to the years 1999-2019 from the public platform [Kaggle](https://www.kaggle.com/danield2255/data-on-songs-from-billboard-19992019/version/1) conducted by Daniel DeFoe. The raw data can be found in [Resources](https://github.com/FrankJiang1208/project_2/tree/main/Resources).
 
@@ -10,7 +10,7 @@ The datasets used for this project provided information on:
 * BillboardHot100 songs from the year 1999 to 2019.
 * Grammy songs from 1999 to 2019.
 
-## Transform:
+### Transform:
 
 
 [Jupyter Notebook](https://github.com/FrankJiang1208/project_2/blob/main/ETL.ipynb)
@@ -22,7 +22,7 @@ In order to transform the public data and use it in our study we performed the f
 * In the Grammy file, there were many irrelevant data cells of songwriters, soloist etc attached to the artist name. We cleaned said data and kept only the artists who are asscociated with each song. 
 * Reviewed the files and transformed into data frames
 
-## Load:
+### Load:
 
 
 [Entity Relationship Diagram (ERD)](https://github.com/FrankJiang1208/project_2/blob/main/ERDiagram.PNG)
@@ -31,17 +31,17 @@ In order to transform the public data and use it in our study we performed the f
 
 * We used pgAdmin to upload our data into a SQL Database (relational) to link the data by our common identifier and to query the datasets as instructed.
 
-## Documentation:
+### Documentation:
 [Documentation Containing Business Rules](https://github.com/FrankJiang1208/project_2/blob/main/Documentation.xlsx)
 
-## Instructions
+### Instructions:
 Running the program:
 
 1. Open ETL.ipynb
 2. run everything and when prompted, enter pgadmin password
 
 
-## Findings: 
+### Findings: 
 
 [Join Query](https://github.com/FrankJiang1208/project_2/blob/main/joinqueries.sql)
 
