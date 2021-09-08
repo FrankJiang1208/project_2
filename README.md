@@ -45,7 +45,7 @@ Running the program:
 ________________________________________________________________________________________________________________________________________
 [Joinqueries] https://github.com/FrankJiang1208/project_2/blob/main/joinqueries.sql
 
-    * After querying the provided data, we can observe that the Country music genre has the most entries in the Billboard dataset while the Rock music genre has the most entries in the Grammy dataset. We can also discern that Drake, the music artist, had the most entires in the Billboard dataset while Adele had the most entries in the Grammy dataset.
+* After querying the provided data, we can observe that the Country music genre has the most entries in the Billboard dataset while the Rock music genre has the most entries in the Grammy dataset. We can also discern that Drake, the music artist, had the most entires in the Billboard dataset while Adele had the most entries in the Grammy dataset.
 
 
 
