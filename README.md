@@ -41,7 +41,7 @@ Running the program:
 
 After querying the provided data, we can observe that:
 * Drake, the music artist, had the most entires in the Billboard dataset while U2 had the most entries in the Grammy dataset.
-* There are 61 song entries that are present in both the Billboard Dataset and the Grammy dataset.
+* There are 62 song entries that are present in both the Billboard Dataset and the Grammy dataset.
 
 
 
