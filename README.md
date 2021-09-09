@@ -20,7 +20,7 @@ In order to transform the public data and use it in our study we performed the f
 * Used Pandas functions in Jupyter Notebook to load all three CSV files.
 * Retained only a few columns from the original csv files and dropped all the columns that were not relevant to the focus of this study.
 * In the Billboard file, multiple artists were listed for the same song, we cleaned up and stacked each artist in a new row. 
-* In the Grammy file, there were many irrelevant data cells of songwriters, soloist etc attached to the artist name. We cleaned said data and kept only the artists who are asscociated with each song. 
+* In the Grammy file, there were many irrelevant data cells of songwriters, soloist etc attached to the artist name. We cleaned the artist column, removed unnecessary words and kept only the artists who are asscociated with each song. 
 * Reviewed the files and transformed into data frames
 
 ### Load:
