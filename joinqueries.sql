@@ -19,7 +19,7 @@ from billboard b
 inner join artists a
 on  a.artist = b.artist
 
---all join (raw)
+--all join using artist id for all three tables
 select b.artist, b.year, b.weeks_on_chart,   a.genre, a.num_albums, g.grammy_award, g.grammy_year
 from billboard b
 inner join artists a
@@ -27,7 +27,7 @@ on  a.artist = b.artist
 left join grammy_songs g
 on b.artist = g.artist
 
---all join
+--all join using artist and name_of_song
 select g.artist, g.name_of_song, g.grammy_award, g.grammy_year, b.peak_position, a.genre
 from grammy_songs g	
 left join billboard b
