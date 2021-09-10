@@ -31,6 +31,7 @@ In order to transform the public data and use it in our study we performed the f
 
 [Documentation Containing Business Rules](https://github.com/FrankJiang1208/project_2/blob/main/Documentation.xlsx)
 
+![Documentation](https://github.com/FrankJiang1208/project_2/blob/main/Resources/documentation.png)
 ### Instructions:
 Running the program:
 
