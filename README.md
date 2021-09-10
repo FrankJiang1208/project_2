@@ -14,7 +14,6 @@ The datasets used for this project provided information on:
 
 * [Jupyter Notebook](https://github.com/FrankJiang1208/project_2/blob/main/ETL.ipynb)
 * [Entity Relationship Diagram (ERD)](https://github.com/FrankJiang1208/project_2/blob/main/ERDiagram.PNG) and [Table Schemata](https://github.com/FrankJiang1208/project_2/blob/main/artists_db_table_schemata.sql)
-* [Join Query](https://github.com/FrankJiang1208/project_2/blob/main/joinqueries.sql)
 
 In order to transform the public data and use it in our study we performed the following:
 * Used Pandas functions in Jupyter Notebook to load all three CSV files.
